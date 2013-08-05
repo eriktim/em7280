@@ -1,0 +1,9 @@
+# /etc/fstab: static file system information.
+#
+# <file system> <mount point> <type> <options> <dump> <pass>
+
+# connect trough samba
+//192.168.1.1/C /media/eminent cifs username=hdd,password=,sec=ntlmv2,uid=1000,gid=1000 0 0
+
+# connect via usb
+UUID=3F45-03F0 /media/eminent vfat uid=1000,gid=1000,utf8,dmask=022,fmask=133 0 0
